@@ -5,7 +5,7 @@
 	"Description": "Adds compatability for Dwarven Expansion jewelry making with minerals in Star Fragments",
 	"UniqueID": "mytigio.dwarven_expansion_starfragments",
 	"MinimumApiVersion": "2.11.2",
-	"UpdateKeys": ["Nexus:xxxxxx"],
+	"UpdateKeys": ["Nexus:31149"],
 	"Dependencies": [
 		{
 			"UniqueID": "mytigio.dwarven_expansion",
