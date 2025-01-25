@@ -1,0 +1,44 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_Jewelry_Diadem": {
+                    "Name": "Jeweled Diadem",
+                    "DisplayName": "{{i18n:Diadem.Default.DisplayName}}",
+                    "Description": "{{i18n:Diadem.Default.Description}}",
+                    "Price": 1,
+                    "Type": "Basic",
+                    "Category": "-26",
+                    "Edibility": -300,
+                    "ColorOverlayFromNextIndex": true,
+                    "ContextTags": [
+                        "{{ModId}}",
+                        "mytigio.dwarven_expansion_jewelry",
+                        "category_gem",
+                        "crystalarium_banned",
+                        "not_museum_donatable"
+                    ],
+                    "Texture": "Mods/DwarvenExpansion_StarFragments_Patch/ObjectSpritesheet",
+                    "SpriteIndex": 0
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Universal_Like"
+                    ],
+                    "Value": "{{ModId}}_Jewelry_Diadem",
+                    "Delimiter": " "
+                }
+            ]
+        }
+    ]
+}

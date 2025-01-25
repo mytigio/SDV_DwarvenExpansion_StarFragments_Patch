@@ -1,0 +1,22 @@
+﻿{
+	"Name": "[CP] Dwarven Expansion - Star Fragments",
+	"Author": "mytigio",
+	"Version": "1.0.0",
+	"Description": "Adds compatability for Dwarven Expansion jewelry making with minerals in Star Fragments",
+	"UniqueID": "mytigio.dwarven_expansion_starfragments",
+	"MinimumApiVersion": "2.11.2",
+	"UpdateKeys": ["Nexus:xxxxxx"],
+	"Dependencies": [
+		{
+			"UniqueID": "mytigio.dwarven_expansion",
+			"IsRequired": true
+		},
+		{
+			"UniqueID": "Airyn.StarFragments",
+			"IsRequired": true
+		}
+	],
+	"ContentPackFor": {
+		"UniqueID": "Pathoschild.ContentPatcher"
+	}
+}

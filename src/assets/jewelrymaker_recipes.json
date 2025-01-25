@@ -1,0 +1,46 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Strings/Objects",
+            "Entries": {
+                "{{ModId}}_Jewelry_Diadem_Display_Name": "{{i18n:Diadem.Output.ObjectDisplayName}}"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)mytigio.dwarven_expansion_JewelryMaker",
+                "OutputRules",
+                "Jewelry",
+                "OutputItem"
+            ],
+            "Entries": {
+                "Jewelry_Diadem": {
+                    "Id": "Jewelry_Diadem",
+                    "ItemId": "{{ModId}}_Jewelry_Diadem",
+                    "CopyPrice": true,
+                    "CopyQuality": true,
+                    "CopyColor": true,
+                    "ObjectInternalName": "{0} Diadem",
+                    "ObjectDisplayName": "[LocalizedText Strings/Objects:{{ModId}}_Jewelry_Diadem_Display_Name %PRESERVED_DISPLAY_NAME]",
+                    "PreserveId": "DROP_IN",
+                    "Condition": "ITEM_CONTEXT_TAG Input starfragment_item",
+                    "PriceModifiers": [
+                        {
+                            "ID": "increase_base_for_gold_bar",
+                            "Modification": "Add",
+                            "Amount": 250
+                        },
+                        {
+                            "ID": "multiply",
+                            "Modification": "Multiply",
+                            "Amount": 3.00
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
